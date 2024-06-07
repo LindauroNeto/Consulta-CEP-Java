@@ -48,7 +48,14 @@ public class Cep {
 	}
 
 	public String showInfo() {
-		return String.format("De acordo com o Cep: %s. \nVocê mora em %s, %s. \nMorando no endereço: %s. \nSe situando no bairro %s.", getCep(), getLocalidade(), getUf(), getLogradouro(), getBairro());
-		
+		return String.format("De acordo com o CEP: %s. \nVocê mora em %s, %s. \nNo endereço: %s. \nSituado no bairro %s.", getCep(), getLocalidade(), getUf(), getLogradouro(), getBairro());
+	}
+	
+	public boolean validadeInfo() {
+		if (getCep() != null || getBairro() != null || getLocalidade() != null || getLogradouro() != null || getUf() != null) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 }
