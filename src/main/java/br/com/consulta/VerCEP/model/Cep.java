@@ -55,7 +55,7 @@ public class Cep {
 	}
 
 	// Caso o usuário informe um CEP inexistente, as informações irão retornar como 'null'.
-	//  E esse método irá fazer a validação pra caso os resultado sejam diferentes de nulo
+	//  E esse método irá fazer a validação do objeto, checando se o mesmo não tem como resultado 'null' em seus atributos
 	public boolean validadeInfo() {
 		if (getCep() != null || getBairro() != null || getLocalidade() != null || getLogradouro() != null || getUf() != null) {
 			return true;
