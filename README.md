@@ -12,3 +12,7 @@ Sistema de consulta do Código de Endereço Postal, mais conhecido como CEP, par
 * POO - Encapsulamento
 * Conversão de arquivos JSON
 * Gerenciamento de dependências no Maven
+
+## Exibição do programa 👨‍💻
+![vendo-o-cep](https://github.com/LindauroNeto/Consulta-CEP-Java/assets/140420389/463b04ba-0c33-48e3-b082-b159b4d6b551)
+
