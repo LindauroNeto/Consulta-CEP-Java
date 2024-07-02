@@ -1,8 +1,8 @@
 package br.com.consulta.VerCEP.model;
 
 public class Cep {
-	// Atributos necessários para a aplicação
-	// Que devem ser IGUAIS aos referidos no arquivo JSON, para não dar nenhum problema de incompatiblidade
+	// Atributos necessários para a aplicação.
+	//  Que devem ser IGUAIS aos referidos no arquivo JSON, para não dar nenhum problema de incompatiblidade
 	private String cep;
 	private String logradouro;
 	private String bairro;
@@ -54,7 +54,7 @@ public class Cep {
 		return String.format("De acordo com o CEP: %s. \nVocê mora em %s, %s. \nNo endereço: %s. \nSituado no bairro %s.", getCep(), getLocalidade(), getUf(), getLogradouro(), getBairro());
 	}
 
-	// Caso o usuário informe um CEP inexistente, as informações irão retornar como 'null'.
+	// Caso o usuário informe um CEP inexistente, as informações irão retornar como 'null'. 
 	//  E esse método irá fazer a validação pra caso os resultado sejam diferentes de nulo
 	public boolean validadeInfo() {
 		if (getCep() != null || getBairro() != null || getLocalidade() != null || getLogradouro() != null || getUf() != null) {

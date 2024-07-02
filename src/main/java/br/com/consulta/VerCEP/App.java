@@ -48,8 +48,8 @@ public class App {
 				System.out.println("Este endereço não existe...");
 			}
 
-		// Processo de validação do CEP (PT. 2),
-		//	caso o usuário tenha digitado um CEP ou longo demais, ou pequeno demais
+		// Processo de validação do CEP (PT. 2), 
+	    //  caso o usuário tenha digitado um CEP ou longo demais, ou pequeno demais
 		} else if (cepBusca.length() > 8 || cepBusca.length() < 8) {
 			System.out.println("CEP inválido.");
 		}
