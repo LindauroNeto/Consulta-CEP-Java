@@ -54,8 +54,8 @@ public class Cep {
 		return String.format("De acordo com o CEP: %s. \nVocê mora em %s, %s. \nNo endereço: %s. \nSituado no bairro %s.", getCep(), getLocalidade(), getUf(), getLogradouro(), getBairro());
 	}
 
-	// Caso o usuário informe um CEP inexistente, as informações irão retornar como 'null'. 
-	//  E esse método irá fazer a validação pra caso os resultado sejam diferentes de nulo
+	// Caso o usuário informe um CEP inexistente, as informações irão retornar como 'null'.
+	//  E esse método irá fazer a validação do objeto, checando se o mesmo não tem como resultado 'null' em seus atributos
 	public boolean validadeInfo() {
 		if (getCep() != null || getBairro() != null || getLocalidade() != null || getLogradouro() != null || getUf() != null) {
 			return true;
